@@ -1,0 +1,26 @@
+.name {
+  color: var(--app--color--dark);
+}
+
+.title {
+  font: var(--app--font--h2);
+}
+
+.image {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placeholder_image {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.placeholder_paragraph > * + * {
+  margin-top: var(--app--space--1);
+}
+
+.placeholder_paragraph > *:not(:last-child) {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+:root {
+  --app--color--background: #F5EFF3;
+  --app--color--white: #fff;
+  --app--color--dark: rgba(0, 0, 0, 0.8);
+  --app--color--grey: rgba(0, 0, 0, 0.2);
+  --app--color--grey--6: rgba(0, 0, 0, 0.06);
+  --app--color--grey--4: rgba(0, 0, 0, 0.04);
+  --app--color--red: rgb(222, 20, 8);
+  --app--color--red--6: rgba(222, 20, 8, 0.6);
+  --app--color--red--2: rgba(222, 20, 8, 0.2);
+  --app--color--green: rgb(42, 224, 112);
+  --app--color--green--6: rgba(42, 224, 112, 0.6);
+  --app--color--green--4: rgba(42, 224, 112, 0.4);
+
+  --app--space--1: 4px;
+  --app--space--2: 8px;
+  --app--space--3: 12px;
+  --app--space--4: 16px;
+  --app--space--5: 20px;
+  --app--space--6: 24px;
+  --app--space--7: 28px;
+  --app--space--8: 32px;
+  --app--space--9: 36px;
+  --app--space--10: 40px;
+  --app--space--12: 48px;
+  --app--space--16: 64px;
+  --app--space--18: 72px;
+  --app--space--header: var(--app--space--12);
+
+  --app--font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  --app--font--h2: bold 24px var(--app--font);
+  --app--font--h4: bold 16px var(--app--font);
+
+  --app--set--divider: 1px solid rgba(0, 0, 0, 0.1);
+  --app--shadow: 0 0 var(--app--space--3) var(--app--color--grey--4);
+}

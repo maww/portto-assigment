@@ -1,0 +1,22 @@
+.main {
+  flex-grow: 1000;
+  flex-shrink: 1000;
+}
+
+.main__horizontal {
+  margin-right: auto;
+}
+
+.main__vertical {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .main__rs__horizontal {
+    margin-right: auto;
+  }
+  
+  .main__rs__vertical {
+    margin-top: auto;
+  }
+}

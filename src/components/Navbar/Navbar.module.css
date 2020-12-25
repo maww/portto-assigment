@@ -1,0 +1,39 @@
+.main {
+  background-color: var(--app--color--background);
+  box-shadow: 0px 1px var(--app--space--2) var(--app--color--grey);
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.title {
+  flex: 1 1;
+  font: var(--app--font--h2);
+  line-height: var(--app--space--header);
+  color: var(--app--color--grey);
+  text-align: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button {
+  flex: 0 0;
+  display: inline-block;
+  width: var(--app--space--header);
+
+  font: var(--app--font--h2);
+  line-height: var(--app--space--header);
+  color: var(--app--color--grey);
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.emtyp {
+  flex: 0 0;
+  width: var(--app--space--header);
+  visibility: hidden;
+}

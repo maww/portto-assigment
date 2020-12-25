@@ -1,0 +1,20 @@
+.view {
+  margin-top: var(--app--space--4);
+  margin-bottom: var(--app--space--4);
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.1s ease-in;
+}
+
+.link:hover {
+  transform-origin: center center;
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  color: var(--app--color--grey);
+}

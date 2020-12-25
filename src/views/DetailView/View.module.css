@@ -1,0 +1,36 @@
+.view {
+  padding-bottom: var(--app--space--12);
+  margin-top: var(--app--space--4);
+  margin-bottom: var(--app--space--4);
+}
+
+/* @media (max-width: 1024px) {
+  .image {
+    width: 100%;
+    min-height: 0;
+  }
+} */
+
+.link_position {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: var(--app--space--4);
+}
+
+.link {
+  display: block;
+  line-height: var(--app--space--8);
+  border-radius: var(--app--space--1);
+  background-color: var(--app--color--green);
+  box-shadow: var(--app--shadow);
+  color: var(--app--color--white);
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.1s ease-in;
+}
+
+.link:hover {
+  transform-origin: center center;
+  transform: scale(1.05);
+}

@@ -1,0 +1,81 @@
+.main {
+  --app--stack--direction: row;
+
+  display: flex;
+  flex-direction: var(--app--stack--direction);
+}
+
+.main > * {
+  --app--stack--gutter: 0;
+  --app--stack--margin: 0 0 0 var(--app--stack--gutter);
+}
+
+.main > * + * {
+  margin: var(--app--stack--margin);
+}
+
+/* MARK: IsCentered */
+
+.main__centered {
+  align-items: center;
+}
+
+/* MARK: Direction */
+
+.main__vertical {
+  --app--stack--direction: column;
+}
+
+.main__vertical > * + * {
+  --app--stack--margin: var(--app--stack--gutter) 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .main__rs__horizontal {
+    --app--stack--direction: row;
+  }
+
+  .main__rs__horizontal > * + * {
+    --app--stack--margin: 0 0 0 var(--app--stack--gutter);
+  }
+
+  .main__rs__vertical {
+    --app--stack--direction: column;
+  }
+
+  .main__rs__vertical > * + * {
+    --app--stack--margin: var(--app--stack--gutter) 0 0 0;
+  }
+}
+
+/* MARK: Gutter */
+
+.main__gutter__small > * {
+  --app--stack--gutter: var(--app--space--1);
+}
+
+.main__gutter__medium > * {
+  --app--stack--gutter: var(--app--space--2);
+}
+
+.main__gutter__large > * {
+  --app--stack--gutter: var(--app--space--4);
+}
+
+.main__gutter__xlarge > * {
+  --app--stack--gutter: var(--app--space--6);
+}
+
+/* MARK: Align */
+
+.main__align__center {
+  align-items: center;
+}
+
+.main__align__end {
+  align-items: flex-end;
+}
+
+.main__align__stretch {
+  align-items: stretch;
+}
