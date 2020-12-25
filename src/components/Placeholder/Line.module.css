@@ -1,4 +1,5 @@
 .main {
+  display: block;
   width: 80%;
   height: 1.2em;
   border-radius: var(--app--space--1);

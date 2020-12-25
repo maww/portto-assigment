@@ -7,7 +7,7 @@ interface Props {
 
 function Line(props: Props): JSX.Element {
   const { className } = props
-  return <div className={`${className || ''} ${style.main}`} />
+  return <span className={`${className || ''} ${style.main}`} />
 }
 
 export default Line
