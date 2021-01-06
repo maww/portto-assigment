@@ -1,0 +1,7 @@
+.main {
+  display: inline-block;
+}
+
+.main[data-loaded=true] .placeholder {
+  display: none;
+}

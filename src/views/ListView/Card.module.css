@@ -4,3 +4,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.image {
+  width: 100%;
+  height: auto;
+}

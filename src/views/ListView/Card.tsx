@@ -15,7 +15,7 @@ function Card(props: Props): JSX.Element {
   return (
     <CommonCard>
       <Stack direction={Direction.VERTICAL} gutter={Gutter.MEDIUM}>
-        <Image src={image} alt={name} />
+        <Image className={style.image} src={image} alt={name} />
         <h4 className={style.name}>{name}</h4>
       </Stack>
     </CommonCard>

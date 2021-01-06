@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Container from '../Container'
 import Stack, { Gutter } from '../Stack'

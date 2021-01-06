@@ -1,6 +1,6 @@
 import React, { ImgHTMLAttributes, useEffect, useState } from 'react'
 import { Block } from '../Placeholder'
-// import style from './Image.module.css'
+import style from './Image.module.css'
 
 function Image(props: ImgHTMLAttributes<HTMLImageElement>): JSX.Element {
   const { src = '' } = props
@@ -16,13 +16,18 @@ function Image(props: ImgHTMLAttributes<HTMLImageElement>): JSX.Element {
     }
   }, [src])
 
-  return isLoaded
-    ? (
+  return (
+    <div
+      className={style.main} 
+      data-loaded={isLoaded}
+    >
       <img
         {...props}
+        onLoad={() => setLoaded(true)}
       />
-    )
-    : <Block />
+      <Block className={style.placeholder} />
+    </div>
+  )
 }
 
 export default Image
